@@ -15,7 +15,7 @@ struct TodoRowView: View {
             Button {
                 todo.isDone.toggle()
             } label: {
-                Image(systemName: todo.isDone ? "checkmark.square.fill" : "square")
+                Image(systemName: todo.isDone ? "checkmark.circle.fill" : "circle")
             }
             .foregroundStyle(color)
             TextField("", text: $todo.text)
